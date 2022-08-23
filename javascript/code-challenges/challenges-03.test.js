@@ -2,13 +2,20 @@
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
-razannnnnnnnnnnnnnnnnn
+
 Write a function called addTwo that takes in an array and adds two to every value using a for loop. Place the new value in a new array. Return the new array.
 ------------------------------------------------------------------------------------------------ */
 
 const addTwo = (arr) => {
   // Solution code here...
-};
+
+  let a=[];
+  for (let i=0 ;i<=arr.length;i++){
+
+a.push(arr[i]+2);
+
+  }
+return a;};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
