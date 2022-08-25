@@ -2,21 +2,21 @@
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
-<<<<<<< HEAD
 
-=======
-razannnnnnnnnnnnnnnnnn
->>>>>>> main
 Write a function called addTwo that takes in an array and adds two to every value using a for loop. Place the new value in a new array. Return the new array.
 ------------------------------------------------------------------------------------------------ */
 
 const addTwo = (arr) => {
   // Solution code here...
-<<<<<<< HEAD
-  
-=======
->>>>>>> main
-};
+
+  let a=[];
+  for (let i=0 ;i<arr.length;i++){
+
+a.push(arr[i]+2);
+
+  }
+return a;};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -28,6 +28,10 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 
 const typeNum = (arr) => {
   // Solution code here...
+  let a= arr.filter(e=>  typeof(e)==="number") ;
+
+return a;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -40,6 +44,8 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 
 const containsAnd = (arr) => {
   // Solution code here...
+  let a= arr.filter(e=>e.includes("and"));
+  return a;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -52,6 +58,8 @@ For example, oddValues([1,2,3]) returns [1,3].
 
 const oddValues = (arr) => {
   // Solution code here...
+  let a=arr.filter(e=>e%2 !=0);
+  return a;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -64,6 +72,9 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
+
+  let a= arr.filter(e=>  ! forbiddenValues.includes(e));
+  return a;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -107,6 +118,8 @@ const snorlaxData = {
 
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
   // Solution code here...
+  let a=arr.filter (e=> e.baseStat > sminBaseStat);
+  return a;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -119,6 +132,8 @@ For example, getStatName(snorlaxData.stats, 50) will return ['special-defense', 
 
 const getStatName = (arr, minBaseStat) => {
   // Solution code here...
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
