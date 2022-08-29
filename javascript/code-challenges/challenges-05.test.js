@@ -14,7 +14,7 @@ You can assume that neither firstName nor lastName will be blank
 const toLastNames = people => {
   // Solution code here...
 let a=[];
-a.push(people.map(e=>e.firstName+" "+e.lastName)); 
+a.push(people.map(e=> e.firstName+" "+e.lastName)); 
 return a;
 
 
