@@ -189,6 +189,30 @@ Here is a sample board:
 
 const detectTicTacToeWin = (board) => {
   // Solution code here...
+  let row1=[board[0][0],board[0][1],board[0][2]]
+  let row2=[board[1][0],board[1][1],board[1][2]]
+  let row3=[board[2][0],board[2][1],board[2][2]]
+  let col1=[board[0][0],board[1][0],board[2][0]]
+  let col2=[board[0][1],board[1][1],board[1][1]]
+  let col3=[board[0][2],board[1][2],board[2][2]]
+  let x1=[board[0][0],board[1][1],board[2][2]]
+  let x2=[board[0][2],board[1][1],board[2][0]]
+  let newArr=[row1,row2,row3,col1,col2,col3,x1,x2]
+
+  let checkArr= newArr.map(item=>{
+    if (item.every(item1=>item1=="O")){
+    return true
+    }else if (item.every(item1=>item1=="X")){
+    return true
+    }else {
+      return false 
+    }
+  })
+  if (checkArr.every(item=>item==false)){   
+      return false
+  }else {
+    return true
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
