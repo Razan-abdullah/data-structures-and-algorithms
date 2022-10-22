@@ -1,4 +1,3 @@
-# Write here the code challenge solution
 class Node:
 
     def __init__(self,value):
@@ -9,8 +8,7 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
-    def append(self, value):
-#        this function to add new node
+    def add_new_node(self, value):
         node = Node(value)
         if self.head is None:
             self.head = node
@@ -19,7 +17,7 @@ class LinkedList:
             while current.next is not None:
                 current = current.next
             current.next = node
-    def delete_node(self, value):
+    def delete(self, value):
         if self.head is None:
             return
         if self.head.value == value:
@@ -31,9 +29,7 @@ class LinkedList:
                 current.next = current.next.next
                 return
             current = current.next
-    def printAll(self):
-
-        # this function for print and return new list
+    def print(self):
 
         list=[]
         if self.head is None :
@@ -41,7 +37,7 @@ class LinkedList:
         else :
             current = self.head
             while current is not None:
-                list.append(current.value)
+                list.add_new_node(current.value)
                 print(current.value)
 
                 current = current.next
